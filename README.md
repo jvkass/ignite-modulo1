@@ -75,7 +75,7 @@ Os principais gerenciadores atualmente são o NPM e Yarn, eles são utilizados p
 - 1XX: Informativo - a solicitação foi aceita ou o processo continua em andamento.
 
 - 2XX: Confirmação
-    -- 200 - Requisição bem sucedida
+    - 200 - Requisição bem sucedida
     -- 201 - Created - Geralmente usado para POST após uma inserção
 
 - 3XX: Redirecionamento 
