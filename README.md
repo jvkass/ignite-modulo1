@@ -62,3 +62,74 @@ Os principais gerenciadores atualmente são o NPM e Yarn, eles são utilizados p
 
 6 - Código Sob Demanda
 
+# Metodos de Requisições 
+
+- GET - Leitura
+- POST - Criação
+- PUT - Atualização
+- DELETE - Deleção
+- PATCH - Atualização Parcial
+
+# HTTP Codes
+
+- 1XX: Informativo - a solicitação foi aceita ou o processo continua em andamento.
+
+- 2XX: Confirmação
+    -- 200 - Requisição bem sucedida
+    -- 201 - Created - Geralmente usado para POST após uma inserção
+
+- 3XX: Redirecionamento 
+    -- 301 - Moved Permanently
+    -- 302 - Moved
+
+- 4XX: Erro do Cliente
+    -- 400 - Bad Request 
+    -- 401 - Unauthorized
+    -- 403 - Forbidden
+    -- 404 - Not Found
+    -- 422 - Unprocessable Entity
+
+- 5XX: Erro no servidor - o servidor falhou ao concluir a solicitação.
+    -- 500 - Internal Server Error 
+    -- 502 - Bad Gateway
+
+# Parâmetros das Requisições
+
+- Header Params 
+    authority: app.rocketseat.com.br
+    method: GET
+    path: /api/journey-nodes
+    scheme: https
+    referer: https://app.rocketseat.com.br/node/
+
+- Query Params
+    -- Chave
+    -- Valor
+    -- Separação
+
+- Route Params
+    -- http://enderecoservidor.com.br/v1/users/{id}
+
+- Body Params
+  {
+      "name": "Joao",
+      "username:"Vitor"
+  }   
+
+# Boas Práticas API Rest
+
+- A utilização correta dos métodos HTTP
+- A utilização correta dos status no retorno das respostas
+- Padrão de nomenclatura 
+    -- Busca de usuários - GET
+        --- http://enderecoservidor.com.br/v1/users
+    -- Busca de usuário por id - GET
+        --- http://enderecoservidor.com.br/v1/users/1
+    -- Busca de endereço do usuário - GET
+        --- http://enderecoservidor.com.br/v1/users/1/adress
+    -- Deleção de um usuário - DELETE
+        --- http://enderecoservidor.com.br/v1/users/1
+    -- Atualização do status do usuário - PATCH
+        --- http://enderecoservidor.com.br/v1/users/1/status
+
+
